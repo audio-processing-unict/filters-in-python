@@ -9,7 +9,9 @@ def main():
     parser.add_argument("rate", type=int)
     args = parser.parse_args()
 
-    ffmpeg = FFmpeg().option("y").input(args.input).output(args.output, ar=args.rate)
+    ffmpeg = (
+        FFmpeg().option("y").input(args.input).output(args.output, ar=args.rate)
+    )
 
     ffmpeg.execute()
 

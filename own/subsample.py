@@ -4,7 +4,9 @@ from typing import List
 from own.io import read_samples, write_samples
 
 
-def resample(original: List[int], original_rate: int, target_rate: int) -> List[int]:
+def resample(
+    original: List[int], original_rate: int, target_rate: int
+) -> List[int]:
     original_num_samples = len(original)
     ratio = target_rate / original_rate
     target_num_samples = int(original_num_samples * ratio)

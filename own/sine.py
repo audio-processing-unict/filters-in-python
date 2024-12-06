@@ -4,7 +4,10 @@ from typing import List
 
 from own.io import write_samples
 
-def generate_sine_wave(frequency: int, duration=1.0, amplitude=1.0, sample_rate=44100) -> List[float]:
+
+def generate_sine_wave(
+    frequency: int, duration=1.0, amplitude=1.0, sample_rate=44100
+) -> List[float]:
     num_samples = int(duration * sample_rate)
     samples = list()
 
@@ -15,6 +18,7 @@ def generate_sine_wave(frequency: int, duration=1.0, amplitude=1.0, sample_rate=
 
     return samples
 
+
 def main():
     parser = ArgumentParser()
     parser.add_argument("-f", "--frequency", type=int, required=True)
@@ -24,8 +28,11 @@ def main():
     parser.add_argument("output")
     args = parser.parse_args()
 
-    samples = generate_sine_wave(args.frequency, args.duration, args.volume, args.sample_rate)
+    samples = generate_sine_wave(
+        args.frequency, args.duration, args.volume, args.sample_rate
+    )
     write_samples(samples, args.sample_rate, args.output)
+
 
 if __name__ == "__main__":
     main()

@@ -32,6 +32,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/25/68/7e150cba9eeffdeb3c5cecdb6896d70c8edd46ce41c0491e12fb2b2256ff/pyee-12.1.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7f/6d/02e817aec661defe148cb9eb0c4eca2444846305f625c2243fb9f92a9045/python_ffmpeg-2.0.12-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7f/29/6807d11765b4c4be4721cb8f452aa68d9d82edde9b45c0ce4904ed6e49ed/wavfile-4.7.2-py3-none-any.whl
 packages:
 - kind: conda
   name: _libgcc_mutex
@@ -451,3 +452,9 @@ packages:
   purls: []
   size: 122354
   timestamp: 1728047496079
+- kind: pypi
+  name: wavfile
+  version: 4.7.2
+  url: https://files.pythonhosted.org/packages/7f/29/6807d11765b4c4be4721cb8f452aa68d9d82edde9b45c0ce4904ed6e49ed/wavfile-4.7.2-py3-none-any.whl
+  sha256: 635396ebde0832df59e887b79ba0ee14dc5e13908821ad29e413b17be004d732
+  requires_python: '>=3.7'

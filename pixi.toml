@@ -1,0 +1,16 @@
+[project]
+authors = ["aegroto <aegroto@protonmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "filters-in-python"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+python = "python"
+
+[dependencies]
+python = ">=3.13.1,<4"
+
+[pypi-dependencies]
+python-ffmpeg = ">=2.0.12, <3"
